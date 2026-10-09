@@ -29,7 +29,7 @@ if(window.redirectTimer){clearInterval(window.redirectTimer);window.redirectTime
 document.title='MASSIVE. — Celestial League';
 if(document.body){
 var kind=/^#\/?secretboard(?:[/?&]|$)/i.test(location.hash)?'board':/^#\/?secretmain(?:[/?&]|$)/i.test(location.hash)?'main':'original';
-var src=kind==='original'?'/secret.html?v=smoked-podium-05e4782':'/flat-preview.html?v=flat-01#'+kind;
+var src=kind==='original'?'/secret.html?v=smoked-podium-05e4782':'/flat-preview.html?v=vault-68f762#'+kind;
 var frame=document.getElementById('secret-preview');
 if(!frame){frame=document.createElement('iframe');frame.id='secret-preview';frame.className='secret-frame';document.body.appendChild(frame)}
 frame.title='MASSIVE '+kind+' design preview';
