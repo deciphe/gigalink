@@ -21,14 +21,19 @@ footer{position:absolute;bottom:31px;left:7vw;right:7vw;display:flex;justify-con
 html.secret body>main{display:none}
 .secret-frame{position:fixed;inset:0;width:100%;height:100%;border:0;background:#080809}
 </style><script>
-function isSecretRoute(){return /^#\/?secret(?:[/?&]|$)/i.test(location.hash)}
+function isSecretRoute(){return /^#\/?secret(?:main|board)?(?:[/?&]|$)/i.test(location.hash)}
 function showSecret(){
 if(!isSecretRoute())return false;
 document.documentElement.classList.add('secret');
 if(window.redirectTimer){clearInterval(window.redirectTimer);window.redirectTimer=null}
 document.title='MASSIVE. — Celestial League';
-if(document.body&&!document.getElementById('secret-preview')){
-var frame=document.createElement('iframe');frame.id='secret-preview';frame.className='secret-frame';frame.title='MASSIVE celestial leaderboard preview';frame.src='/secret.html?v=smoked-podium-05e4782';document.body.appendChild(frame)
+if(document.body){
+var kind=/^#\/?secretboard(?:[/?&]|$)/i.test(location.hash)?'board':/^#\/?secretmain(?:[/?&]|$)/i.test(location.hash)?'main':'original';
+var src=kind==='original'?'/secret.html?v=smoked-podium-05e4782':'/flat-preview.html?v=flat-01#'+kind;
+var frame=document.getElementById('secret-preview');
+if(!frame){frame=document.createElement('iframe');frame.id='secret-preview';frame.className='secret-frame';document.body.appendChild(frame)}
+frame.title='MASSIVE '+kind+' design preview';
+if(frame.getAttribute('src')!==src)frame.setAttribute('src',src);
 }
 return true;
 }
