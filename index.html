@@ -2,22 +2,28 @@
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#080809"><title>GIGAPROP is now MASSIVE.</title><meta name="description" content="GIGAPROP is now MASSIVE. Welcome to our new home."><link rel="canonical" href="https://massiveprop.xyz/"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
 <style>
 *{box-sizing:border-box}html,body{margin:0;background:#080809;color:#eeeae2;font-family:Manrope,Arial,sans-serif;-webkit-font-smoothing:antialiased}body{overflow-x:hidden}
-main{position:relative;isolation:isolate;min-height:100svh;overflow:hidden;display:flex;align-items:center;padding:100px 7vw 140px;background:radial-gradient(ellipse at 89% 69%,#7f638f0c,transparent 55%),#080809}
+main{position:relative;isolation:isolate;min-height:100svh;overflow:hidden;display:flex;align-items:center;padding:100px 7vw 140px;background:radial-gradient(ellipse at 89% 69%,#c9c5b909,transparent 55%),#080809}
 canvas{position:absolute;inset:0;width:100%;height:100%;z-index:-2;pointer-events:none}
-.haze{position:absolute;z-index:-3;width:85vw;height:85vw;right:-34vw;top:12%;background:radial-gradient(ellipse,#b29cb324,transparent 65%);filter:blur(65px);pointer-events:none}
-header{position:absolute;top:34px;left:7vw;right:7vw;display:flex;justify-content:space-between;align-items:center;font-size:10px;font-weight:800;letter-spacing:1.9px;color:#726e76}header b{font-size:15px;letter-spacing:-.6px;color:#b7b1b9}header span{font-size:8px;letter-spacing:2px}
-.copy{position:relative;width:100%;padding-bottom:35px}.intro{font-size:11px;font-weight:700;letter-spacing:2.5px;color:#aca5b0;margin:0 0 25px}
-h1{font-size:clamp(66px,14.8vw,226px);font-weight:800;line-height:.91;letter-spacing:-.09em;margin:0 0 25px;padding-right:.09em;color:#eeeae2;text-shadow:0 3px 45px #08080955}
-.tagline{font-size:clamp(17px,2vw,26px);line-height:1.4;letter-spacing:-.7px;font-weight:600;color:#aaa2af;margin:0}.tagline em{font-weight:700;color:#e1d9cf;font-style:normal}
-.enter{display:inline-flex;align-items:center;gap:28px;margin-top:39px;padding:12px 0;text-decoration:none;color:#e8dfcd;font-size:13px;font-weight:800;letter-spacing:-.15px;transition:color .2s}.enter span{font-size:24px;line-height:1;transition:transform .2s}.enter:hover{color:#fff}.enter:hover span{transform:translate(4px,-4px)}.enter:focus-visible{outline:2px solid #d6c29e;outline-offset:8px}
-footer{position:absolute;bottom:31px;left:7vw;right:7vw;display:flex;justify-content:space-between;align-items:center;gap:15px;color:#77717b;font-size:9px;font-weight:700;letter-spacing:.5px}.count{color:#bcb2c3;font-variant-numeric:tabular-nums}.address{font-size:8px;letter-spacing:1.9px;color:#aaa08c}
+.haze{position:absolute;z-index:-3;width:85vw;height:85vw;right:-34vw;top:12%;background:radial-gradient(ellipse,#cbc7bb12,transparent 65%);filter:blur(65px);pointer-events:none}
+header{position:absolute;top:34px;left:7vw;right:7vw;display:flex;justify-content:space-between;align-items:center;font-size:10px;font-weight:800;letter-spacing:1.9px;color:#929087}header b{font-size:15px;letter-spacing:-.6px;color:#cac7bd}header span{font-size:8px;letter-spacing:2px}
+.copy{position:relative;width:100%;padding-bottom:35px}.intro{font-size:11px;font-weight:700;letter-spacing:2.5px;color:#bdb9ae;margin:0 0 25px}
+h1{font-size:clamp(66px,14.8vw,226px);font-weight:800;line-height:.91;letter-spacing:-.09em;margin:0 0 25px;padding-right:.09em;color:#eeeae2;text-shadow:none}
+.tagline{font-size:clamp(17px,2vw,26px);line-height:1.4;letter-spacing:-.7px;font-weight:700;color:#b8b5ab;margin:0}.tagline em{font-weight:700;color:#e6e2d8;font-style:normal}
+.enter{display:inline-flex;align-items:center;gap:28px;margin-top:39px;padding:12px 0;text-decoration:none;color:#e6e2d8;font-size:13px;font-weight:800;letter-spacing:-.15px;transition:color .2s}.enter span{font-size:24px;line-height:1;transition:transform .2s}.enter:hover{color:#fff}.enter:hover span{transform:translate(4px,-4px)}.enter:focus-visible{outline:2px solid #d6d2c7;outline-offset:8px}
+footer{position:absolute;bottom:31px;left:7vw;right:7vw;display:flex;justify-content:space-between;align-items:center;gap:15px;color:#969288;font-size:9px;font-weight:700;letter-spacing:.5px}.count{color:#c9c5bb;font-variant-numeric:tabular-nums}.address{font-size:8px;letter-spacing:1.9px;color:#b7b3a8}
 @media(min-width:1600px){main{padding-left:9vw}header,footer{left:9vw;right:9vw}}
 @media(max-width:600px){main{padding:95px 25px 140px;align-items:flex-start}.copy{padding-top:21svh}header,footer{left:25px;right:25px}header{top:27px}header span{font-size:7px;letter-spacing:1px}.intro{font-size:8px;letter-spacing:1.7px;margin-bottom:21px}h1{font-size:16vw;letter-spacing:-.085em;margin-bottom:21px}.tagline{font-size:17px;max-width:230px;line-height:1.6}.enter{font-size:12px;margin-top:26px;gap:24px}footer{font-size:8px;bottom:26px}.address{font-size:6px;letter-spacing:1px}.haze{width:160vw;height:160vw;right:-80vw;top:35%}}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
 
 /* Heavy, close-set editorial line, matching the main wordmark. */
-.intro{font-size:clamp(18px,2.3vw,30px);font-weight:800;letter-spacing:-.055em;line-height:1.05;color:#c9c2ce;margin-bottom:22px;text-transform:none}
+.intro{font-size:clamp(18px,2.3vw,30px);font-weight:800;letter-spacing:-.055em;line-height:1.05;color:#cecac0;margin-bottom:22px;text-transform:none}
 @media(max-width:600px){.intro{font-size:21px;letter-spacing:-.055em;margin-bottom:19px}}
+/* Flat Massive: cream-grey lettering, quiet edges, no purple haze. */
+header{font-size:12px;letter-spacing:.02em}header span{font-size:11px;letter-spacing:.04em}
+.enter{font-size:18px;letter-spacing:-.04em;gap:20px}.enter span{font-size:28px}
+footer{font-size:12px;letter-spacing:0}.address{font-size:11px;letter-spacing:.04em}
+.tagline{font-weight:700}.haze{opacity:.55}
+@media(max-width:600px){header span{font-size:10px}.enter{font-size:17px}footer{font-size:11px}.address{font-size:10px}}
 html.secret body>main{display:none}
 .secret-frame{position:fixed;inset:0;width:100%;height:100%;border:0;background:#080809}
 </style><script>
@@ -52,7 +58,7 @@ function draw(){
 var w=canvas.clientWidth,h=canvas.clientHeight,dpr=Math.min(devicePixelRatio||1,2);
 canvas.width=Math.round(w*dpr);canvas.height=Math.round(h*dpr);ctx.setTransform(dpr,0,0,dpr,0,0);
 var mobile=w<600,r=mobile?w*1.13:Math.max(w*.61,h*.83),cx=mobile?w*1.14:w*1.04,cy=mobile?h*1.12:h*1.20;
-var glow=ctx.createRadialGradient(cx,cy,r*.94,cx,cy,r*1.085);glow.addColorStop(0,'rgba(198,180,153,0)');glow.addColorStop(.4,'rgba(195,170,146,.055)');glow.addColorStop(.7,'rgba(166,141,186,.025)');glow.addColorStop(1,'rgba(0,0,0,0)');ctx.fillStyle=glow;ctx.fillRect(0,0,w,h);
+var glow=ctx.createRadialGradient(cx,cy,r*.94,cx,cy,r*1.085);glow.addColorStop(0,'rgba(198,180,153,0)');glow.addColorStop(.4,'rgba(207,204,191,.04)');glow.addColorStop(.7,'rgba(207,204,191,.018)');glow.addColorStop(1,'rgba(0,0,0,0)');ctx.fillStyle=glow;ctx.fillRect(0,0,w,h);
 var step=mobile?3.1:3.9;
 var craters=[[-.44,-.45,.11],[-.12,-.74,.075],[.12,-.44,.13],[-.65,-.23,.065],[-.3,-.1,.09],[.36,-.65,.07],[-.59,-.65,.052],[.05,-.16,.055],[-.21,-.43,.038],[.42,-.26,.085],[-.77,-.38,.032]];
 for(var y=0;y<h;y+=step){var row=Math.round(y/step);for(var x=(row%2)*step/2;x<w;x+=step){
@@ -63,7 +69,7 @@ var crater=0;for(var i=0;i<craters.length;i++){var c=craters[i],dx=nx-c[0],dy=ny
 var grain=(Math.sin(x*12.9898+y*78.233)*43758.5453)%1;
 var value=Math.max(.015,Math.min(1,light*(.63+terrain+crater)+grain*.028));
 var fade=Math.min(1,(1-q)*45);var alpha=(.22+value*.63)*fade;
-ctx.fillStyle='rgba(219,207,183,'+alpha.toFixed(3)+')';ctx.beginPath();ctx.arc(x,y,step*(.12+value*.37),0,Math.PI*2);ctx.fill();
+ctx.fillStyle='rgba(215,211,198,'+alpha.toFixed(3)+')';ctx.beginPath();ctx.arc(x,y,step*(.12+value*.37),0,Math.PI*2);ctx.fill();
 }}
 var shade=ctx.createLinearGradient(0,0,w,0);shade.addColorStop(0,'rgba(8,8,9,.8)');shade.addColorStop(.28,'rgba(8,8,9,.48)');shade.addColorStop(.7,'rgba(8,8,9,0)');ctx.fillStyle=shade;ctx.fillRect(0,0,w,h);
 }
