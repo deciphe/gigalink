@@ -28,7 +28,7 @@ html.secret body>main{display:none}
 .secret-frame{position:fixed;inset:0;width:100%;height:100%;border:0;background:#080809}
 </style><script>
 function isSecretRoute(){return /^#\/?secret(?:main|board)?(?:[/?&]|$)/i.test(location.hash)}
-function isVaultRoute(){return /^#\\/?vault(?:[/?&]|$)/i.test(location.hash)}
+function isVaultRoute(){return /^#\/?vault(?:[/?&]|$)/i.test(location.hash)}
 function showVault(){
 if(!isVaultRoute())return false;
 document.documentElement.classList.add('secret');
